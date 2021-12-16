@@ -69,7 +69,7 @@ public class PlayMenu extends BorderPane {
 			GameCanvasScene forPlay = new GameCanvasScene();
 			Main.sceneHolder.switchScene(forPlay);
 			SoundHolder.getInstance().bgmMainMenu.stop();
-			SoundHolder.getInstance().bgmFight1.play(0.1);
+			SoundHolder.getInstance().bgmFight1.play();
 		});
 
 		backBtn.setOnMouseClicked(e -> {

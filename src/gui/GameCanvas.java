@@ -51,7 +51,7 @@ public class GameCanvas extends Canvas {
 	}
 
 	public static void playShootSound() {
-		SoundHolder.getInstance().shootSound1.play(0.3);
+		SoundHolder.getInstance().shootSound1.play();
 	}
 
 	public static void setCurrentBoss(int idx) {

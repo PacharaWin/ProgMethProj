@@ -24,7 +24,7 @@ public class Win extends BorderPane {
 		this.setPrefSize(1050, 600);
 
 		SoundHolder.getInstance().bgmFight1.stop();
-		SoundHolder.getInstance().winBgm.play(0.1);
+		SoundHolder.getInstance().winBgm.play();
 		// System.out.println("win");
 		this.bottomMenu = new HBox();
 		try (InputStream is = Files.newInputStream(Paths.get("res/GameBg3.jpg"))) {

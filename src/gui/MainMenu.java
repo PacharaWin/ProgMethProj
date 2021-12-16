@@ -21,7 +21,7 @@ public class MainMenu extends Pane {
 
 	public MainMenu() {
 		if (!SoundHolder.getInstance().bgmMainMenu.isPlaying()) {
-			SoundHolder.getInstance().bgmMainMenu.play(0.3);
+			SoundHolder.getInstance().bgmMainMenu.play();
 			SoundHolder.getInstance().bgmMainMenu.setCycleCount(MediaPlayer.INDEFINITE);
 		}
 		this.setPrefSize(1050, 600);

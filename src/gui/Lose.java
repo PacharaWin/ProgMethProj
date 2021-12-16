@@ -23,7 +23,7 @@ public class Lose extends BorderPane {
 	public Lose() {
 		this.setPrefSize(1050, 600);
 		SoundHolder.getInstance().bgmFight1.stop();
-		SoundHolder.getInstance().loseBgm.play(0.1);
+		SoundHolder.getInstance().loseBgm.play();
 		this.bottomMenu = new HBox();
 		try (InputStream is = Files.newInputStream(Paths.get("res/GameBg3.jpg"))) {
 			ImageView img = new ImageView(new Image(is));
