@@ -26,7 +26,6 @@ public class ImageHolder {
 	public Image gameBg2;
 	public Image gameBg3;
 	public Image gameBg4;
-	public Image emeraldDragon;
 	public List<Image> wizards;
 	public List<Image> bulletBoss;
 
@@ -41,7 +40,6 @@ public class ImageHolder {
 	public ImageHolder() {
 		this.win = this.loadImage("win", PNG);
 		this.lose = this.loadImage("lose", PNG);
-		this.emeraldDragon = this.loadImage("EmeraldDragon", "png");
 		this.grims = this.loadImageList("grim", PNG, 5);
 		this.golems = this.loadImageList("golem", PNG, 4);
 		this.wizards = this.loadImageList("rogue", PNG, 8);

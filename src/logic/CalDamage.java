@@ -10,14 +10,14 @@ public class CalDamage {
 	public static void calculateDamage(Bullet b, Player e) {
 		double multiply = CalDamage.elementMuliplier(b, e);
 		int newHealth = (int) Math.max(e.getHealth() - multiply * b.getDamage(), 0);
-		//System.out.println(newHealth);
+		// System.out.println(newHealth);
 		e.setHealth(newHealth);
 	}
 
 	public static void calculateDamage(Bullet b, Boss e) {
 		double multiply = CalDamage.elementMuliplier(b, e);
 		int newHealth = (int) Math.max(e.getHealth() - multiply * b.getDamage(), 0);
-		//System.out.println(newHealth);
+		// System.out.println(newHealth);
 		e.setHealth(newHealth);
 	}
 

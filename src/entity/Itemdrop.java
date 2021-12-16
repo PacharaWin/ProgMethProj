@@ -1,14 +1,13 @@
 package entity;
 
 import javafx.geometry.Point2D;
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import object.base.GameObject;
 
 public abstract class Itemdrop extends GameObject {
 	protected Point2D position;
-	protected boolean isStatic;
 	protected boolean isDestroy;
-	protected boolean isVisible;
 	protected Image sprite;
 	protected int radius;
 	protected int z;
@@ -17,6 +16,16 @@ public abstract class Itemdrop extends GameObject {
 	public Itemdrop() {
 		this.radius = 3;
 		this.isDestroy = false;
+	}
+
+	public void draw(GraphicsContext gc) {
+		final double x = this.getPosition().getX();
+		final double y = this.getPosition().getY();
+
+		final double imgX = sprite.getWidth();
+		final double imgY = sprite.getHeight();
+		gc.drawImage(this.getSprite(), x, y, imgX, imgY);
+
 	}
 
 	protected boolean collideWith(GameObject other) {
@@ -32,28 +41,12 @@ public abstract class Itemdrop extends GameObject {
 		this.position = position;
 	}
 
-	public boolean isStatic() {
-		return isStatic;
-	}
-
-	public void setStatic(boolean isStatic) {
-		this.isStatic = isStatic;
-	}
-
 	public boolean isDestroy() {
 		return isDestroy;
 	}
 
 	public void setDestroy(boolean isDestroy) {
 		this.isDestroy = isDestroy;
-	}
-
-	public boolean isVisible() {
-		return isVisible;
-	}
-
-	public void setVisible(boolean isVisible) {
-		this.isVisible = isVisible;
 	}
 
 	public Image getSprite() {

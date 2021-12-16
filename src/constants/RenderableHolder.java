@@ -14,7 +14,6 @@ public class RenderableHolder {
 	private Comparator<Renderable> comparator;
 
 	static {
-		loadResource();
 	}
 
 	public RenderableHolder() {
@@ -30,9 +29,6 @@ public class RenderableHolder {
 		return instance;
 	}
 
-	public static void loadResource() {
-
-	}
 
 	public void remove(Renderable entity) {
 		entities.remove(entity);

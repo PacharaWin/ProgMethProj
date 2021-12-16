@@ -4,7 +4,6 @@ import constants.ImageHolder;
 import constants.SoundHolder;
 import gui.GameCanvas;
 import javafx.geometry.Point2D;
-import javafx.scene.canvas.GraphicsContext;
 import object.base.GameObject;
 
 public class ItemdropFire extends Itemdrop {
@@ -18,17 +17,6 @@ public class ItemdropFire extends Itemdrop {
 	public ItemdropFire(Point2D id) {
 		this();
 		this.position = id;
-
-	}
-
-	@Override
-	public void draw(GraphicsContext gc) {
-		final double x = this.getPosition().getX();
-		final double y = this.getPosition().getY();
-
-		final double imgX = sprite.getWidth();
-		final double imgY = sprite.getHeight();
-		gc.drawImage(this.getSprite(), x, y, imgX, imgY);
 
 	}
 

@@ -5,7 +5,6 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import constants.ImageHolder;
 import constants.SoundHolder;
 import main.Main;
 import javafx.scene.Scene;
