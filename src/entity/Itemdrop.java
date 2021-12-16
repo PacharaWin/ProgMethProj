@@ -11,7 +11,6 @@ public abstract class Itemdrop extends GameObject {
 	protected Image sprite;
 	protected int radius;
 	protected int z;
-	protected Elemental element;
 
 	public Itemdrop() {
 		this.radius = 3;
